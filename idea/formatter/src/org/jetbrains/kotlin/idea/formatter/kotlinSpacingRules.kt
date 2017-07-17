@@ -195,7 +195,7 @@ fun createSpacingBuilder(settings: CodeStyleSettings, builderUtil: KotlinSpacing
 
             after(VAL_KEYWORD).spaces(1)
             after(VAR_KEYWORD).spaces(1)
-            beforeInside(PROPERTY_ACCESSOR, PROPERTY).spacing(1, 0, 0, true, 0)
+            beforeInside(PROPERTY_ACCESSOR, PROPERTY).parentDependentLFSpacing(1, 0, false, 0)
             betweenInside(TYPE_PARAMETER_LIST, IDENTIFIER, PROPERTY).spaces(1)
             betweenInside(TYPE_REFERENCE, DOT, PROPERTY).spacing(0, 0, 0, false, 0)
             betweenInside(DOT, IDENTIFIER, PROPERTY).spacing(0, 0, 0, false, 0)
